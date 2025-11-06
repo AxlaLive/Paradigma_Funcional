@@ -66,7 +66,7 @@ public class FrmCambioTemperatura extends JFrame {
     private JPanel crearPanelControl() {
         JPanel pnlDatosProceso = new JPanel();
         pnlDatosProceso.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 5));
-        pnlDatosProceso.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+        pnlDatosProceso.setBorder(BorderFactory.createEmptyBorder(5, 5, 40, 5));
 
         // Selección de ciudad
         pnlDatosProceso.add(new JLabel("Ciudad: "));
