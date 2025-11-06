@@ -68,14 +68,12 @@ public class FrmCambioTemperatura extends JFrame {
         pnlDatosProceso.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 5));
         pnlDatosProceso.setBorder(BorderFactory.createEmptyBorder(5, 5, 40, 5));
 
-        // Selección de ciudad
         pnlDatosProceso.add(new JLabel("Ciudad: "));
         cmbCiudad = new JComboBox<>(CIUDADES);
         cmbCiudad.setSelectedItem("Todas");
         cmbCiudad.setPreferredSize(new Dimension(100, 25));
         pnlDatosProceso.add(cmbCiudad);
 
-        // Rango de fechas
         pnlDatosProceso.add(new JLabel("Desde "));
         dccDesde = new DateChooserCombo();
         dccDesde.setPreferredSize(new Dimension(100, 25));
@@ -89,27 +87,24 @@ public class FrmCambioTemperatura extends JFrame {
         java.awt.Color azulBoton = new java.awt.Color(0, 120, 215);
         Font fuenteBoton = new Font("Segoe UI", Font.BOLD, 12);
 
-        // Botón Graficar
-        JButton btnGraficar = new JButton("📊 Graficar");
+        JButton btnGraficar = new JButton("Graficar");
         btnGraficar.setPreferredSize(new Dimension(130, 28));
         btnGraficar.setBackground(azulBoton);
-        btnGraficar.setForeground(java.awt.Color.WHITE);
+        btnGraficar.setForeground(java.awt.Color.BLACK);
         btnGraficar.setFocusPainted(false);
         btnGraficar.setFont(fuenteBoton);
         btnGraficar.addActionListener(e -> btnGraficarClick());
         pnlDatosProceso.add(btnGraficar);
 
-        // Fecha específica para extremos
         pnlDatosProceso.add(new JLabel("  Fecha para extremos: "));
         dccExtremos = new DateChooserCombo();
         dccExtremos.setPreferredSize(new Dimension(120, 25));
         pnlDatosProceso.add(dccExtremos);
 
-        // Botón Analizar Extremos
-        JButton btnAnalizarExtremos = new JButton("🔥 Analizar Extremos");
+        JButton btnAnalizarExtremos = new JButton("Analizar Extremos");
         btnAnalizarExtremos.setPreferredSize(new Dimension(170, 28));
         btnAnalizarExtremos.setBackground(azulBoton);
-        btnAnalizarExtremos.setForeground(java.awt.Color.WHITE);
+        btnAnalizarExtremos.setForeground(java.awt.Color.BLACK);
         btnAnalizarExtremos.setFocusPainted(false);
         btnAnalizarExtremos.setFont(fuenteBoton);
         btnAnalizarExtremos.addActionListener(e -> btnAnalizarExtremosClick());
