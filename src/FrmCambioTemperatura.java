@@ -87,7 +87,7 @@ public class FrmCambioTemperatura extends JFrame {
         pnlDatosProceso.add(dccHasta);
 
         java.awt.Color azulBoton = new java.awt.Color(0, 120, 215);
-        Font fuenteBoton = new Font("Segoe UI", Font.BOLD, 12);
+        Font fuenteBoton = new Font("Monospaced", Font.BOLD, 14);
 
         // Botón Graficar
         JButton btnGraficar = new JButton("📊 Graficar");
@@ -107,7 +107,7 @@ public class FrmCambioTemperatura extends JFrame {
 
         // Botón Analizar Extremos
         JButton btnAnalizarExtremos = new JButton("🔥 Analizar Extremos");
-        btnAnalizarExtremos.setPreferredSize(new Dimension(170, 28));
+        btnAnalizarExtremos.setPreferredSize(new Dimension(200, 28));
         btnAnalizarExtremos.setBackground(azulBoton);
         btnAnalizarExtremos.setForeground(java.awt.Color.WHITE);
         btnAnalizarExtremos.setFocusPainted(false);
@@ -149,7 +149,7 @@ public class FrmCambioTemperatura extends JFrame {
                 dataset);
 
         ChartPanel chartPanel = new ChartPanel(chart);
-        chartPanel.setPreferredSize(new Dimension(600, 400));
+        chartPanel.setPreferredSize(new Dimension(560, 400));
 
         pnlGrafica.removeAll();
         pnlGrafica.add(chartPanel, BorderLayout.CENTER);
@@ -165,8 +165,8 @@ public class FrmCambioTemperatura extends JFrame {
 
         JTextArea txtResultado = new JTextArea(resultado);
         txtResultado.setEditable(false);
-        txtResultado.setFont(new Font("Monospaced", Font.PLAIN, 14));
-        txtResultado.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
+        txtResultado.setFont(new Font("Monospaced", Font.PLAIN, 20));
+        txtResultado.setBorder(BorderFactory.createEmptyBorder(50, 25, 5, 15));
 
         pnlEstadisticas.removeAll();
         pnlEstadisticas.add(new JScrollPane(txtResultado), BorderLayout.CENTER);
