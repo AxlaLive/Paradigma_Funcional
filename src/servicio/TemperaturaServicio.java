@@ -152,7 +152,7 @@ public class TemperaturaServicio {
                 .orElse(null);
 
         return String.format(
-                "📅 Fecha: %s\n\n🌡️ Ciudad más calurosa: %s (%.1f °C)\n❄️ Ciudad menos calurosa: %s (%.1f °C)",
+                "Fecha: %s\n\nCiudad más calurosa: %s (%.1f °C)\nCiudad menos calurosa: %s (%.1f °C)",
                 fecha, max.getCiudad(), max.getTemperatura(),
                 min.getCiudad(), min.getTemperatura());
     }
