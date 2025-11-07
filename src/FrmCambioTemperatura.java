@@ -87,7 +87,7 @@ public class FrmCambioTemperatura extends JFrame {
         java.awt.Color azulBoton = new java.awt.Color(0, 120, 215);
         Font fuenteBoton = new Font("Monospaced", Font.BOLD, 14);
 
-        JButton btnGraficar = new JButton("📊 Graficar");
+        JButton btnGraficar = new JButton("Graficar");
         btnGraficar.setPreferredSize(new Dimension(130, 28));
         btnGraficar.setBackground(azulBoton);
         btnGraficar.setForeground(java.awt.Color.BLACK);
@@ -101,8 +101,7 @@ public class FrmCambioTemperatura extends JFrame {
         dccExtremos.setPreferredSize(new Dimension(120, 25));
         pnlDatosProceso.add(dccExtremos);
 
-        // Botón Analizar Extremos
-        JButton btnAnalizarExtremos = new JButton("🔥 Analizar Extremos");
+        JButton btnAnalizarExtremos = new JButton("Analizar Extremos");
         btnAnalizarExtremos.setPreferredSize(new Dimension(200, 28));
         btnAnalizarExtremos.setBackground(azulBoton);
         btnAnalizarExtremos.setForeground(java.awt.Color.BLACK);

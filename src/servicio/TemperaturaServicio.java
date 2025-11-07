@@ -17,11 +17,9 @@ import entidad.CambioTemperatura;
 
 public class TemperaturaServicio {
 
-    // En TemperaturaServicio.java - añadir este método
     public static Map<String, Double> calcularPromedioPorCiudadEnRango(LocalDate desde, LocalDate hasta) {
         String nombreArchivo = "src/datos/CambiosTemperaturas.csv";
         List<CambioTemperatura> registros = getDatos(nombreArchivo);
-        // Reusa el método que agrupa por ciudad y calcula promedio
         return promedioPorCiudad(registros, desde, hasta);
     }
 
@@ -152,7 +150,7 @@ public class TemperaturaServicio {
                 .orElse(null);
 
         return String.format(
-                "📅 Fecha: %s\n\n🌡️ Ciudad más calurosa: %s (%.1f °C)\n❄️ Ciudad menos calurosa: %s (%.1f °C)",
+                "Fecha: %s\n\nCiudad más calurosa: %s (%.1f °C)\nCiudad menos calurosa: %s (%.1f °C)",
                 fecha, max.getCiudad(), max.getTemperatura(),
                 min.getCiudad(), min.getTemperatura());
     }
